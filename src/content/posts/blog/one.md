@@ -4,7 +4,7 @@ published: 2026-05-17
 updated: 2016-05-18
 description: 这是第一篇文章
 tags:
-  - 标签
+  - 博客
 category: 分类
 draft: false
 author: CaiGuoWei
