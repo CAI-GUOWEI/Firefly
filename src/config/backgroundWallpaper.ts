@@ -128,7 +128,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				mobile: true,
 			},
 			// 渐变高度
-			height: "25vh",
+			height: "30vh",
 			// 是否允许用户通过控制面板切换渐变过渡
 			switchable: true,
 		},
