@@ -10,14 +10,14 @@ export const siteConfig: SiteConfig = {
 	title: "想象一朵未来的玫瑰",
 
 	// 站点副标题
-	subtitle: "小蔡",
+	subtitle: "",
 
 	// 站点 URL
 	site_url: "https://02102020.xyz",
 
 	// 站点描述
 	description:
-		"这是我的第一个博客！",
+		"Stay Hungry, Stay Foolish!",
 
 	// 站点关键词
 	keywords: [
