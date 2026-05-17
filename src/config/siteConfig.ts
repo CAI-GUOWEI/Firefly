@@ -7,13 +7,13 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "我的新站点",
+	title: "想象一朵未来的玫瑰",
 
 	// 站点副标题
-	subtitle: "小可莉",
+	subtitle: "小蔡",
 
 	// 站点 URL
-	site_url: "https://394000.xyz",
+	site_url: "https://02102020.xyz",
 
 	// 站点描述
 	description:
