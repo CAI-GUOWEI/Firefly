@@ -1,0 +1,47 @@
+---
+// 页面元数据（可选）
+const title = "QQ 二维码";
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    .qr-image {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    p {
+      margin-top: 1.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>QQ 群 / 好友</h1>
+    <!-- 将 qq-qr.png 放到 public 目录下 -->
+    <img src="/assets/images/qq-qr.png" alt="QQ二维码" class="qr-image" />
+    <p>扫描二维码添加 QQ</p>
+  </div>
+</body>
+</html>
