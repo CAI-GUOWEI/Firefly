@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "想象一朵未来的玫瑰",
 
 	// 个人签名
-	bio: "Stay hungry,Stay foolish.",
+	bio: "命运不是生长在道路尽头的花朵，而是跨过门扉后，沿着花海的方向，自己踏出的小径",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
