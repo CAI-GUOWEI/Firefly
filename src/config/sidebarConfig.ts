@@ -48,36 +48,11 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件
-			enable: true,
+			enable: false,
 			// 组件位置
 			position: "top",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
-		},
-		{
-			// 组件类型：音乐播放器
-			type: "music",
-			// 是否启用该组件
-			enable: true,
-			// 组件位置
-			position: "sticky",
-			// 是否在文章详情页显示
-			showOnPostPage: true,
-		},
-		{
-			// 组件类型：分类组件
-			type: "categories",
-			// 是否启用该组件
-			enable: true,
-			// 组件位置
-			position: "sticky",
-			// 是否在文章详情页显示
-			showOnPostPage: true,
-			// 响应式配置
-			responsive: {
-				// 折叠阈值：当分类数量超过>5个时自动折叠
-				collapseThreshold: 5,
-			},
 		},
 		{
 			// 组件类型：标签组件
@@ -95,16 +70,16 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			},
 		},
 		{
-			// 组件类型：广告栏组件 1
-			type: "advertisement",
+			// 组件类型：侧边栏目录组件（只在文章详情页显示）
+			type: "sidebarToc",
 			// 是否启用该组件
-			enable: false,
+			enable: true,
 			// 组件位置
 			position: "sticky",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
-			// 配置ID：使用第一个广告配置
-			configId: "ad1",
+			// 是否在非文章详情页显示
+			showOnNonPostPage: false,
 		},
 	],
 
@@ -131,28 +106,29 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			showOnPostPage: false,
 		},
 		{
-			// 组件类型：侧边栏目录组件（只在文章详情页显示）
-			type: "sidebarToc",
+			// 组件类型：分类组件
+			type: "categories",
 			// 是否启用该组件
 			enable: true,
 			// 组件位置
 			position: "sticky",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
-			// 是否在非文章详情页显示
-			showOnNonPostPage: false,
+			// 响应式配置
+			responsive: {
+				// 折叠阈值：当分类数量超过>5个时自动折叠
+				collapseThreshold: 5,
+			},
 		},
 		{
-			// 组件类型：广告栏组件 2
-			type: "advertisement",
+			// 组件类型：音乐播放器
+			type: "music",
 			// 是否启用该组件
-			enable: false,
+			enable: true,
 			// 组件位置
 			position: "sticky",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
-			// 配置ID：使用第二个广告配置
-			configId: "ad2",
 		},
 	],
 
