@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 
 	// 站点描述
 	description:
-		"Stay Hungry, Stay Foolish!",
+		"属于我的私人小屋",
 
 	// 站点关键词
 	keywords: [
