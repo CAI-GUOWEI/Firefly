@@ -21,12 +21,18 @@ export const profileConfig: ProfileConfig = {
 	// `pnpm add @iconify-json/<icon-set-name>`
 	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
-		// {
-		// 	name: "qq",
-		// 	icon: "fa7-brands:qq",
-		// 	url: "https://qm.qq.com/q/ZGsFa8qX2G",
-		// 	showName: false,
-		// },
+		{
+			name: "qq",
+			icon: "fa7-brands:qq",
+			url: "/qr/qq",
+			showName: false,
+		},
+		{
+			name: "wechat",
+			icon: "fa7-brands:wechat",
+			url: "/qr/wechat",
+			showName: false,
+		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
@@ -37,6 +43,18 @@ export const profileConfig: ProfileConfig = {
 			name: "Email",
 			icon: "fa7-solid:envelope",
 			url: "mailto:2498329232@qq.com",
+			showName: false,
+		},
+		{
+			name: "Bilibili",
+			icon: "fa7-brands:bilibili",
+			url: "https://space.bilibili.com/1726568878",
+			showName: false,
+		},
+		{
+			name: "netease",
+			icon: "simple-icons:neteasecloudmusic",
+			url: "https://music.163.com/#/user/home?id=1798459876",
 			showName: false,
 		},
 	],
