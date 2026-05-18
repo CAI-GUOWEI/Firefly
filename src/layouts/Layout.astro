@@ -937,7 +937,17 @@ function disableAnimation() {
       }
 
       const navbar = document.getElementById("navbar-wrapper");
+      /*
       if (navbar && stickyNavbar) {
+        navbar.classList.remove("navbar-hidden");
+      } else if (bannerEnabled && navbar) {
+        const threshold = window.innerHeight * (BANNER_HEIGHT_HOME / 100) - 88;
+        if (document.documentElement.scrollTop >= threshold) {
+          navbar.classList.add("navbar-hidden");
+        }
+      }
+      */
+      if (navbar) {
         navbar.classList.remove("navbar-hidden");
       } else if (bannerEnabled && navbar) {
         const threshold = window.innerHeight * (BANNER_HEIGHT_HOME / 100) - 88;
@@ -1392,7 +1402,7 @@ function disableAnimation() {
         }
       });
     }
-
+/*
     if (stickyNavbar && navbar) {
       operations.push(() => {
         navbar.classList.remove("navbar-hidden");
@@ -1407,6 +1417,15 @@ function disableAnimation() {
           navbar.classList.remove("navbar-hidden");
         }
       });
+    }
+*/
+    if (bannerEnabled && navbar) {
+      const threshold = window.innerHeight * (BANNER_HEIGHT_HOME / 100) - 88;
+      if (scrollTop >= threshold) {
+        navbar.classList.add("navbar-hidden");
+      } else {
+        navbar.classList.remove("navbar-hidden");
+      }
     }
 
     if (navbarElement) {
