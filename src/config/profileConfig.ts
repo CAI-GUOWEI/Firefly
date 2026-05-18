@@ -27,12 +27,6 @@ export const profileConfig: ProfileConfig = {
 			url: "/qr/qq",
 			showName: false,
 		},
-		// {
-		// 	name: "wechat",
-		// 	icon: "fa7-brands:weixin",
-		// 	url: "/qr/wechat",
-		// 	showName: false,
-		// },
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
