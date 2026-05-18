@@ -1597,10 +1597,8 @@ function disableAnimation() {
       }
 
       // 仅切换顶部偏移；组件间距由容器常驻 gap-4 保持
-    /*const nextTopClass: "top-0" | "top-4" =
+      const nextTopClass: "top-0" | "top-4" =
         hasVisibleTop || isScrolled ? "top-4" : "top-0";
-    */
-      const nextTopClass: "top-0" | "top-4" = "top-0";
 
       if (sidebarStickyState[side].topClass !== nextTopClass) {
         sticky.classList.remove(sidebarStickyState[side].topClass);
