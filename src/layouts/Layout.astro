@@ -1569,7 +1569,7 @@ function disableAnimation() {
     // 组件可见性变化后，立即重算 sticky 间距，避免 swup 切页后残留旧间距
     updateSidebarStickySpacing();
   }
-
+/*
   // 根据当前页面实际可见的顶部组件与滚动位置，动态更新侧边栏 sticky 间距
   function updateSidebarStickySpacing() {
     const scrollTop = document.documentElement.scrollTop || window.scrollY || 0;
@@ -1607,6 +1607,23 @@ function disableAnimation() {
       }
     });
   }
+*/
+
+  function updateSidebarStickySpacing() {
+    (["left", "right"]).forEach((side) => {
+      const sticky = document.getElementById(`${side}-sidebar-sticky`);
+      if (!sticky) return;
+
+      const nextTopClass = "top-4";
+
+      if (sidebarStickyState[side].topClass !== nextTopClass) {
+        sticky.classList.remove(sidebarStickyState[side].topClass);
+        sticky.classList.add(nextTopClass);
+        sidebarStickyState[side].topClass = nextTopClass;
+      }
+    });
+  }
+
 
   // Initialize wallpaper mode
   import { initWallpaperMode, initThemeListener } from "@/utils/setting-utils";
