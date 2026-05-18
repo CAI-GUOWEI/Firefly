@@ -1614,7 +1614,7 @@ function disableAnimation() {
       const sticky = document.getElementById(`${side}-sidebar-sticky`);
       if (!sticky) return;
 
-      const nextTopClass = "top-4";
+      const nextTopClass = "top-0";
 
       if (sidebarStickyState[side].topClass !== nextTopClass) {
         sticky.classList.remove(sidebarStickyState[side].topClass);
