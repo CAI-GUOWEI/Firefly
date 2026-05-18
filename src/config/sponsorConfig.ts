@@ -31,14 +31,14 @@ export const sponsorConfig: SponsorConfig = {
 			description: "使用 支付宝 扫码赞助",
 			enabled: true,
 		},
-		{
-			name: "微信",
-			icon: "fa7-brands:weixin",
-			qrCode: "/assets/images/sponsor/wechat.png",
-			link: "",
-			description: "使用 微信 扫码赞助",
-			enabled: true,
-		},
+		// {
+		// 	name: "微信",
+		// 	icon: "fa7-brands:weixin",
+		// 	qrCode: "/assets/images/sponsor/wechat.png",
+		// 	link: "",
+		// 	description: "使用 微信 扫码赞助",
+		// 	enabled: true,
+		// },
 		{
 			name: "ko-fi",
 			icon: "simple-icons:kofi",
