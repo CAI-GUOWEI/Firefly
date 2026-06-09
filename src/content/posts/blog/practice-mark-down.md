@@ -1,7 +1,7 @@
 ---
 title: practiceMarkDown
 published: 2026-05-25
-updated: ""
+updated: 2016-06-9
 description: 这是文章的简短描述
 image: ./cover.jpg
 tags:
